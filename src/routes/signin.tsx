@@ -79,7 +79,7 @@ function SignIn() {
             className="mt-8 space-y-4"
             onSubmit={(e) => {
               e.preventDefault();
-              navigate({ to: "/" });
+              navigate({ to: "/translate" });
             }}
           >
             <label className="block">
