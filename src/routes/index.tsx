@@ -51,6 +51,7 @@ function Index() {
             <a href="#features" className="transition-colors hover:text-foreground">Features</a>
             <a href="#how" className="transition-colors hover:text-foreground">How it works</a>
             <a href="#try" className="transition-colors hover:text-foreground">Try signs</a>
+            <Link to="/github" className="transition-colors hover:text-foreground">GitHub sync</Link>
           </nav>
           <Link
             to="/signin"
