@@ -175,7 +175,7 @@ function Translate() {
   // sign -> speech
   const [composed, setComposed] = useState<Phrase[]>([]);
   const sentence = useMemo(
-    () => composed.map((p) => p.say[baseLang(lang)] ?? p.say.en!).join(" "),
+    () => composed.map((p) => p.say[baseLang(lang)] ?? p.say['en']!).join(" "),
     [composed, lang],
   );
 
@@ -394,7 +394,7 @@ function Translate() {
                     : "Tap the mic and start speaking"}
               </p>
               <button
-                onClick={() => setHeard(demoLines[baseLang(lang)] ?? demoLines.en!)}
+                onClick={() => setHeard(demoLines[baseLang(lang)] ?? demoLines['en']!)}
                 className="mt-3 inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2 text-xs font-semibold transition-colors hover:bg-secondary"
               >
                 <Play className="h-3.5 w-3.5" /> Play a demo sentence
