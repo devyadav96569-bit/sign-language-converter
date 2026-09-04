@@ -80,18 +80,26 @@ function Index() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              to="/signin"
+              to="/translate"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground shadow-xl shadow-primary/30 transition-transform hover:scale-105"
             >
-              Get started free <ArrowRight className="h-4 w-4" />
+              Start translating <ArrowRight className="h-4 w-4" />
             </Link>
-            <a
-              href="#try"
+            <Link
+              to="/signin"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
             >
-              <Hand className="h-4 w-4" /> Try a sign
-            </a>
+              <Hand className="h-4 w-4" /> Sign in
+            </Link>
           </div>
+          <div className="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-muted-foreground">
+            {["English", "हिन्दी", "मराठी", "বাংলা", "தமிழ்", "Español", "Français"].map((l) => (
+              <span key={l} className="rounded-full border border-border bg-card px-3 py-1">
+                {l}
+              </span>
+            ))}
+          </div>
+
         </div>
 
         <div className="relative animate-pop-in [animation-delay:150ms]">
