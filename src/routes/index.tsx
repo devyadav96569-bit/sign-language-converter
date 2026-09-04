@@ -34,7 +34,7 @@ const signs = [
 ];
 
 function Index() {
-  const [activeSign, setActiveSign] = useState(signs[2]);
+  const [activeSign, setActiveSign] = useState(signs[2]!);
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
