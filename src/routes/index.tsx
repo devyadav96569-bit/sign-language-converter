@@ -74,10 +74,11 @@ function Index() {
             </span>
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">
-            SignaBridgeAI watches sign language through your camera and turns it into
-            speech and text instantly — and converts speech back into avatar signs.
-            One bridge between the deaf and hearing worlds.
+            SignaBridgeAI turns Indian Sign Language into spoken words in real time — and
+            turns whatever the hearing person says back into signs on screen. Two-way,
+            instant, and it works in 8+ languages.
           </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/translate"
