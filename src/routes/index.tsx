@@ -220,11 +220,12 @@ function Index() {
             Join SignaBridgeAI and start your first conversation in sign language today.
           </p>
           <Link
-            to="/signin"
+            to="/translate"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-background px-8 py-3.5 text-sm font-bold text-foreground shadow-lg transition-transform hover:scale-105"
           >
-            Sign in to continue <ArrowRight className="h-4 w-4" />
+            Open the live translator <ArrowRight className="h-4 w-4" />
           </Link>
+
         </div>
       </section>
 
